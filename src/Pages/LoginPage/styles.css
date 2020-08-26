@@ -1,0 +1,153 @@
+#login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* CABECALHO */
+
+#login-page .cabecalho{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 35vh;
+    background-color: #202121;
+    padding: 5% 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#login-page .cabecalho h1{
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+#login-page .cabecalho p{
+    font-size: 1.5em;
+}
+
+/* LOGIN */
+
+.login-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    background-color: #fff;
+    padding: 10%;
+    margin-top: 10%;
+    width: 80vw;
+    height: 35vh;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group span{
+    color: red;
+    margin-top: -5%;
+}
+
+.login-area .input{
+    width: 30vh;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding: 3%;
+    border: 2px solid rgba(0,0,0,0.7);
+    transition: 0.3s all;
+    color: #000;
+}
+
+.login-area .input:hover{
+    border-color: rgb(0,0,0);
+}
+
+.login-area button{
+    padding: 3%;
+    width: 20vh;
+    border-radius: 7px;
+    border: 2px solid #202121;
+    background-color: #202121;
+    color: #fff;
+    transition: 0.3s all;
+}
+
+.login-area button:hover{
+    background-color: #fff;
+    color: #202121;
+    cursor: pointer;
+}
+
+/* BREAKPOINTS */
+
+@media(min-width: 768px){
+    #login-page header.cabecalho h1{
+        font-size: 5em;
+    }
+
+    #login-page header.cabecalho p{
+        font-size: 2.5em;
+    }
+
+    .form-group span{
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+
+    .login-area .input{
+        font-size: 1.5em;
+    }
+
+    .login-area button{
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width: 1024px){
+    .login-area .input{
+        font-size: 1.8em;
+    }
+
+    .login-area button{
+        font-size: 1.8em;
+        
+    }
+}
+
+@media(min-width: 1280px){
+    #login-page{
+        flex-direction: row;
+    }
+
+    #login-page .cabecalho{
+        width: 50vw;
+        height: 100vh;
+    }
+    
+    .login-area{
+        padding: 1%;
+        margin: 0;
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .form-group span{
+        margin-top: -5%;
+        font-size: 1em;
+    }
+
+    .login-area .input{
+        font-size: 1em;
+    }
+
+    .login-area button{
+        font-size: 1em;
+        padding: 1%;
+    }
+}

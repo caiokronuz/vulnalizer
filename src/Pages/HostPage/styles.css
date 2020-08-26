@@ -1,0 +1,87 @@
+#host-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Volter */
+
+#host-page #button{
+    border: 1px solid #000;
+    background-color: #000;
+    padding: 2%;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Detalhes */
+
+.host-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    background-color: #fff;
+    padding: 5%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.host-details h1{
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.host-details h2{
+    text-align: center;
+}
+
+.host-details p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.host-details .vuln-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.host-details .vuln-list li{
+    display: flex;
+    border: 1px solid #000;
+    background-color: #202121;
+    color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    padding: 3%;
+    margin-top: 2px;
+}
+
+.host-details .vuln-list li span{
+    padding: 3%;
+}
+
+@media(min-width: 1280px){
+    .host-details{
+        padding: 2%;
+    }
+
+    #host-page #button{
+        padding: 1%;
+    }
+
+    .host-details .vuln-list li{
+        flex-direction: row;
+    } 
+
+    .host-details .vuln-list p{
+        font-size: 0.9em;
+    }
+
+    .host-details .vuln-list li span{
+        padding: 1%;
+        font-size: 0.9em;
+    }
+}

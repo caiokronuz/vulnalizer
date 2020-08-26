@@ -1,0 +1,158 @@
+#home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION */
+
+#home-page section{
+    margin-top: 10px;
+    background-color: #fff;
+    width: 90vw;
+    padding: 3%;
+}
+
+/* FORMULARIO */
+
+#home-page .filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-page .filter select{
+    font-size: 0.7em;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+#home-page .filter a{
+    background-color: #fff;
+    color: #000;
+    padding: 2%;
+    border-radius: 4px;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.3s all;
+    margin-bottom: 20px;
+}
+
+#home-page .filter a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* HOSTS */
+
+.content .hosts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .hosts li{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    padding: 3%;
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.content .hosts li h1{
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.content .hosts p {
+    padding: 3%;
+    font-weight: bold;
+}
+
+.content .hosts span{
+    font-weight: normal;
+}
+
+.content .hosts li a{
+    margin-top: 5px;
+    background: #202121;
+    text-align: center;
+    border: 1px solid #202121;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3%;
+}
+
+/* PAGES */
+
+div.pages{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+}
+
+div.pages button{
+    padding: 2%;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* BREAKPOINTS */
+
+@media(min-width: 1280px){
+    #home-page .filter{
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    #home-page .filter select{
+        font-size: 1em;
+        padding: 1%;
+        width: 30vw;
+        border-radius: 5px;
+        border: 1px solid #000;
+        margin-right: 5px;
+    }
+    
+    #home-page .filter a{
+        padding: 1%;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .content .hosts li {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 84vw;
+        height: 15vh;
+        margin-top: 7px;
+    }
+
+    .content .hosts li h1{
+        border: none;
+    }
+
+    .content .hosts li p {
+        padding: 2%;
+    }
+
+    .content .hosts li a{
+        padding: 1%;
+    }
+
+    
+    div.pages button{
+        padding: 1%;
+    }
+
+}

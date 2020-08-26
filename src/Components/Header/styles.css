@@ -1,0 +1,31 @@
+.cabecalho-pag{
+    display: flex;
+    font-size: 2em;
+    background-color: #202121;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.cabecalho-pag #links span{
+    font-size: 0.5em;
+    margin-right: 10px;
+    color: rgba(255,255,255,0.7);
+    transition: 0.2s all;
+}
+
+.cabecalho-pag #links span:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(min-width: 1280px){
+    .cabecalho-pag{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
